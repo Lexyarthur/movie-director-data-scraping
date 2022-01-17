@@ -5,7 +5,7 @@ Scraped the entire list of BBC's 21st Century’s 100 greatest films and used th
 
 After first scraping the '100 greatest films' list, I outputted the result containing the movie critics' names, critics' organization, critics' countries of origin, movie names  and directors' names and year the movies were produced in `movie_data_copy.csv`.
 
-By individualizing the url of each movie director's imdb page, I am able to scrape the data for each name in the movie_data, loop through the table and find the imbd url for each name, date of birth of each director and country of origin of each director.
+In `scraping_director_data`, I scraped for individual url of each movie director's imdb page and then scrape the data for each name already identified in the `movie_data_copy` file to find the date of birth of each director and country of origin of each director.
 
 I created another csv as `movie_data_merged` which contains this result, merged with the movie critics' names, critics' organization, critics' countries of origin, movie names  and directors' names and year the movies already identified in the initial dataframe.
 
