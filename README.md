@@ -3,7 +3,7 @@ The aim of this project is to build a map showing the countries of origin and ra
 
 Scraped the entire list of BBC's 21st Century’s 100 greatest films and used the list to scrape the IMDB page of each movie titles and their directors.
 
-After first scraping the '100 greatest films' list, I outputted the result containing the movie critics' names, critics' organization, critics' countries of origin, movie names  and directors' names and year the movies were produced in `movie_data_copy.csv.`
+After first scraping the '100 greatest films' list, I outputted the result containing the movie critics' names, critics' organization, critics' countries of origin, movie names  and directors' names and year the movies were produced in `movie_data_copy.csv`.
 
 By individualizing the url of each movie director's imdb page, I am able to scrape the data for each name in the movie_data, loop through the table and find the imbd url for each name, date of birth of each director and country of origin of each director.
 
