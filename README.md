@@ -7,9 +7,9 @@ After first scraping the '100 greatest films' list, I outputted the result conta
 
 By individualizing the url of each movie director's imdb page, I am able to scrape the data for each name in the movie_data, loop through the table and find the imbd url for each name, date of birth of each director and country of origin of each director.
 
-I created another csv as movie_data_merged which contains this result, merged with the movie critics' names, critics' organization, critics' countries of origin, movie names  and directors' names and year the movies already identified in the initial dataframe.
+I created another csv as `movie_data_merged` which contains this result, merged with the movie critics' names, critics' organization, critics' countries of origin, movie names  and directors' names and year the movies already identified in the initial dataframe.
 
-I imported this merged dataframe into the 'final_map' notebook and used pandas to do some basic analysis to first of all exclude all directors born in the US. The aim is to build a map that shows the countries of origin of all directors born outside the US and their ratings.
+I imported this merged dataframe into the `final_map` notebook and used pandas to do some basic analysis to first of all exclude all directors born in the US. The aim is to build a map that shows the countries of origin of all directors born outside the US and their ratings.
 
 The analysis show directors with the highest number of counts(ratings) and with this, I built my html articles and headlines.
 
