@@ -1,5 +1,5 @@
 # Mapping BBC 100 greatest movies by director rating
-The aim of this project is to build a map showing the countries of origin and ratings of the different directors of movies rated in the BBC 21st Century's 100 greatest films.
+The aim of this project is to build a map showing the countries of origin and ratings of the different directors of movies rated in the BBC 21st Century's 100 greatest films mirrored here [link] http://floatingmedia.com/columbia/BBC.html to preserve its original format.
 
 Scraped the entire list of BBC's 21st Century’s 100 greatest films and used the list to scrape the IMDB page of each movie titles and their directors.
 
