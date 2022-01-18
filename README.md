@@ -1,4 +1,4 @@
-# Scraping list of BBC's 100 greatest movies  of the 21st Century and the director info.
+# Scraping list of BBC's 100 greatest movies  of the 21st Century and the directors' info.
 
 The aim of this project is to build a map showing the countries of origin and ratings of the different directors of movies rated in the BBC 21st Century's 100 greatest films mirrored here http://floatingmedia.com/columbia/BBC.html to preserve its original format.
 
