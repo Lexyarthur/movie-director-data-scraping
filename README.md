@@ -5,14 +5,13 @@ The aim of this project is to build a map showing the countries of origin and ra
 The scraping of the list starts from the notebook [BBC_project_code_steps(1)](https://github.com/kfalayi/Scraping-best-movies-directors-info/blob/main/BBC_project_code_steps(1).ipynb) using BeautifulSoup and Regex to identify specific patterns. This first scrape targets the names of the 177 critics who voted in the list,  the critics' organsation, critics' country, movie names, directors and year of movie release.
 
 The result is saved in the CSV file `movie_data.csv`.
+My next scrape in the [scraping_director_data.ipynb](https://github.com/kfalayi/Scraping-best-movies-directors-info/blob/main/scraping_director_data.ipynb) file is done using a copy of the movie_data file `movie_data_copy.csv` in order not to tamper with the original file in case I make changes to it along the way.
 
-Scraped the entire list of BBC's 21st Century’s 100 greatest films and used the list to scrape the IMDB page of each movie titles and their directors.
+I imported pandas and numpy and cleaned up the columns a bit using regex and the string replace method. Then I imported BeautifulSoup which would be used to scrape to scrape the IMDB page of each movie titles and their directors already identified in `movie_data.csv`.
 
-After first scraping the '100 greatest films' list, I outputted the result containing the movie critics' names, critics' organization, critics' countries of origin, movie names  and directors' names and year the movies were produced in `movie_data_copy.csv`.
+First I needed a sample of the url or the IMDB page of a director to see the structure and imported requests to get this url. With BeautifulSoup, I looped and parsed the html structurue of each director in my list to scrape the date of birth of each director and their country of origin. In looping through the names and urls, because of the likelihood that many of the names would not turn up the needed details, I used try and except to ensure my code doesn't break even when some names turn up no results.
 
-In `scraping_director_data`, I scraped for individual url of each movie director's imdb page and then scrape the data for each name already identified in the `movie_data_copy` file to find the date of birth of each director and country of origin of each director.
-
-I created another csv as `movie_data_merged` which contains this result, merged with the movie critics' names, critics' organization, critics' countries of origin, movie names  and directors' names and year the movies already identified in the initial dataframe.
+Then I saved the result in the CSV file `director_data.csv`. I joined the movie_data dataframe to the director_data dataframe and saved the result in another CSV file `movie_data_mertged.csv` which contains this result, merged with the movie critics' names, critics' organization, critics' countries of origin, movie names  and directors' names and year the movies already identified in the initial dataframe.
 
 I imported this merged dataframe into the `map_building` notebook and used pandas to do some basic analysis to first of all exclude all directors born in the US. The aim is to build a map that shows the countries of origin of all directors born outside the US and their ratings.
 
