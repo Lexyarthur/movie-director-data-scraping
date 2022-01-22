@@ -2,7 +2,7 @@
 
 The aim of this project is to build a map showing the countries of origin and ratings of the different directors of movies rated in the BBC 21st Century's 100 greatest films mirrored here http://floatingmedia.com/columbia/BBC.html to preserve its original format.
 
-The scraping of the list starts from the notebook *BBC_project_code_steps(1)* Scraped the entire list of BBC's 21st Century’s 100 greatest films and used the list to scrape the IMDB page of each movie titles and their directors.
+The scraping of the list starts from the notebook [BBC_project_code_steps(1)](https://github.com/kfalayi/Scraping-best-movies-directors-info/blob/main/BBC_project_code_steps(1).ipynb) Scraped the entire list of BBC's 21st Century’s 100 greatest films and used the list to scrape the IMDB page of each movie titles and their directors.
 
 After first scraping the '100 greatest films' list, I outputted the result containing the movie critics' names, critics' organization, critics' countries of origin, movie names  and directors' names and year the movies were produced in `movie_data_copy.csv`.
 
