@@ -4,7 +4,7 @@ The aim of this project is to build a map showing the countries of origin and ra
 
 The scraping of the list starts from the notebook [BBC_project_code_steps(1)](https://github.com/kfalayi/Scraping-best-movies-directors-info/blob/main/BBC_project_code_steps(1).ipynb) using BeautifulSoup and Regex to identify specific patterns. This first scrape targets the names of the 177 critics who voted in the list,  the critics' organsation, critics' country, movie names, directors and year of movie release.
 
-The result is saved in the CSV file #movie_data.csv.
+The result is saved in the CSV file `movie_data.csv`.
 
 Scraped the entire list of BBC's 21st Century’s 100 greatest films and used the list to scrape the IMDB page of each movie titles and their directors.
 
